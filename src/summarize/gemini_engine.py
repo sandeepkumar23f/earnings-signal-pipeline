@@ -29,10 +29,10 @@ class GeminiSummarizer:
         self.client = genai.Client(api_key=GEMINI_API_KEY)
         # Primary model with automatic failover across active Flash models on 503/429 spikes
         candidates: List[str] = [
-            GEMINI_MODEL,
-            "gemini-3.7-flash",
-            "gemini-3.6-flash",
             "gemini-3.5-flash",
+            "gemini-3.1-flash-lite",
+            "gemini-3.7-flash",
+            GEMINI_MODEL,
         ]
         self.fallback_models: List[str] = list(dict.fromkeys(candidates))
 

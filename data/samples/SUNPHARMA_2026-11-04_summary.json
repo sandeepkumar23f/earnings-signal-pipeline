@@ -1,0 +1,98 @@
+{
+  "company": "Sun Pharmaceutical Industries Limited",
+  "scrip_code": "524715",
+  "nse_symbol": "SUNPHARMA",
+  "quarter": "Q2 FY27",
+  "call_date": "2026-11-04",
+  "source": "NSE",
+  "source_url": "https://nsearchives.nseindia.in/corporate/SUNPHARMA456_04112026191520_IntimationSE20261104EarningsCallTranscriptQ2FY27_Signed.pdf",
+  "management_tone": "Cautiously Optimistic",
+  "tldr": [
+    "Consolidated revenue grew 11.8% YoY to INR 1,61,000 million, with EBITDA margins at 29.3%.",
+    "US business declined 8.2% YoY due to lenalidomide erosion, though QoQ growth was 6.5%.",
+    "India business remains a strong performer with 17.3% growth, driven by volume expansion and new product launches.",
+    "Organon acquisition remains on track for closure in Q4 FY27; integration planning is progressing as scheduled.",
+    "Ilumya growth slowed in the US; management has implemented interventions and expects recovery over the next few quarters."
+  ],
+  "management_commentary": [
+    "Gross margin improved to 80.8% due to favorable product mix and currency tailwinds.",
+    "Ilumya received US approval for psoriatic arthritis; soft launch planned for November.",
+    "India business maintains #1 rank with 8.6% market share; volume growth of 6.7% significantly outperformed IPM growth of 1.8%.",
+    "R&D spend was 4.8% of sales (INR 7,784 million), with management expecting a ramp-up in H2 FY27.",
+    "Voluntary recall of 11 ophthalmic products from the Assam plant initiated to ensure quality and safety."
+  ],
+  "guidance": [
+    "Maintain high single-digit top-line growth guidance for FY27.",
+    "R&D spend expected to ramp up in H2 FY27 to meet full-year guidance targets.",
+    "Organon acquisition on track to close by Q4 FY27."
+  ],
+  "segment_performance": [
+    {
+      "segment": "India Formulations",
+      "notes": "Revenue of INR 55,523 million, up 17.3% YoY; volume growth of 6.7% driven by strong prescription performance."
+    },
+    {
+      "segment": "US Business",
+      "notes": "Revenue of USD 455 million, down 8.2% YoY due to lenalidomide erosion; 5 new generic products launched in Q2."
+    },
+    {
+      "segment": "Global Innovative Medicines",
+      "notes": "Sales up 6.9% to USD 356 million; growth impacted by US Ilumya slowdown, partially offset by international performance."
+    },
+    {
+      "segment": "Emerging Markets",
+      "notes": "Revenue of USD 350 million, up 7.6% YoY; growth driven by branded generics and Ilumya."
+    }
+  ],
+  "key_metrics": [
+    {
+      "metric": "Consolidated Revenue",
+      "value": "INR 1,61,000 million",
+      "context": "11.8% growth YoY"
+    },
+    {
+      "metric": "EBITDA Margin",
+      "value": "29.3%",
+      "context": "Lower YoY due to Q2 FY26 lenalidomide benefit"
+    },
+    {
+      "metric": "Reported Net Profit",
+      "value": "INR 19,885 million",
+      "context": "Includes exceptional items for litigation and acquisition costs"
+    },
+    {
+      "metric": "Net Cash",
+      "value": "USD 3.3 billion",
+      "context": "Consolidated level"
+    }
+  ],
+  "notable_qa": [
+    {
+      "question": "What is driving the slowdown in US Ilumya growth and what is the recovery timeline?",
+      "answer": "Management identified execution factors and market dynamics; interventions are in place, and the new psoriatic arthritis indication is expected to return the product to typical growth patterns over the next few quarters.",
+      "asked_by": "Dr. Kunal Dhamesha, Macquarie Capital"
+    },
+    {
+      "question": "Is the 17% growth in India business sustainable and what is the volume vs. price mix?",
+      "answer": "Growth is broad-based across 12 therapy areas; 50-60% of growth is driven by volume and new products, with the remainder from pricing.",
+      "asked_by": "Dr. Kunal Dhamesha, Macquarie Capital"
+    },
+    {
+      "question": "Will the Organon acquisition involve further exceptional expenses in coming quarters?",
+      "answer": "Yes, acquisition-related costs will continue until the transaction closes in Q4 FY27, with some costs being back-ended.",
+      "asked_by": "Juhi Kumari, Narnolia Financial Services"
+    },
+    {
+      "question": "Can you comment on the media report regarding the Assam plant ophthalmic products?",
+      "answer": "The company voluntarily recalled 11 products and initiated a temporary cessation of manufacturing to ensure quality and safety; the regulator has been kept informed.",
+      "asked_by": "Vishal Manchanda, Systematix"
+    }
+  ],
+  "risks": [
+    "US market generic erosion (specifically lenalidomide).",
+    "Execution risks in the US specialty business.",
+    "Regulatory and quality compliance risks (e.g., Assam plant recall).",
+    "Uncertainty in R&D clinical trial outcomes and timelines.",
+    "Integration risks associated with the Organon acquisition."
+  ]
+}

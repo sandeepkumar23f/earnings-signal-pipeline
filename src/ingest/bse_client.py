@@ -50,6 +50,7 @@ class BSEClient:
             follow_redirects=True,
         )
         self._warmed = False
+        self._blocked_this_cycle = False
 
     async def warm_session(self, force: bool = False) -> None:
         if self._warmed and not force:
@@ -85,6 +86,10 @@ class BSEClient:
         if resp.status_code in (401, 403):
             await self.warm_session(force=True)
             resp = await self.client.get(BSE_API_URL, params=params)
+        if resp.status_code == 403:
+            self._blocked_this_cycle = True
+            logger.info("BSE API WAF blocked automated requests (HTTP 403); tripping circuit-breaker for this cycle.")
+            return []
         if resp.status_code != 200:
             logger.warning(f"BSE API returned HTTP {resp.status_code} for {scrip_code}")
             return []
@@ -92,6 +97,7 @@ class BSEClient:
         return payload.get("Table", []) if isinstance(payload, dict) else []
 
     async def fetch_recent_transcripts(self, lookback_days: int = 95) -> List[Dict[str, Any]]:
+        self._blocked_this_cycle = False
         to_dt = datetime.now()
         from_dt = to_dt - timedelta(days=lookback_days)
         prev_str = from_dt.strftime("%Y%m%d")
@@ -100,6 +106,8 @@ class BSEClient:
         discovered: List[Dict[str, Any]] = []
 
         for item in WATCHLIST:
+            if self._blocked_this_cycle:
+                break
             bse_code = item["bse_code"]
             try:
                 rows = await self._fetch_scrip_announcements(bse_code, prev_str, to_str)
